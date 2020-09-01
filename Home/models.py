@@ -17,5 +17,5 @@ class Proyectos(models.Model):
     categoria=models.ForeignKey(Categoria, on_delete=models.CASCADE)
     nombre=models.CharField(max_length=60)
     imagen=models.FileField(upload_to="projects/")
-    url=models.URLField()
+    url=models.URLField(null=True,blank=True)
     autor=models.ForeignKey(Autores, on_delete=models.CASCADE)
