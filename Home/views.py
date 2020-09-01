@@ -20,7 +20,7 @@ def proyectos(request):
         categoria=Categoria.objects.get(id=request.GET.get("projects"))
     contexto = {
         "categorias":Categoria.objects.all(),
-        "proyectos":proyectos,
+        "proyectos":proyectos.order_by("nombre"),
         "categoria":categoria,
         "principal":Principal.objects.last(),
     }
