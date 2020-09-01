@@ -1,0 +1,1040 @@
+<!doctype html>
+<!--[if IE 7 ]>
+<html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<!--<![endif]-->
+<!--<![endif]-->
+<html lang="en">
+<head>
+    <title>Hasta - Responsive MultiPurpose HTML5 Template</title>
+    <meta charset="utf-8">
+    <!-- Meta -->
+    <meta name="keywords" content=""/>
+    <meta name="author" content="">
+    <meta name="robots" content=""/>
+    <meta name="description" content=""/>
+    {% load static %}
+    <!-- this styles only adds some repairs on idevices  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+
+    <!-- Google fonts - witch you want to use - (rest you can just remove) -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet'
+          type='text/css'>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- stylesheets -->
+    <script src="https://kit.fontawesome.com/b5e26b5da0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="screen" href="/static/js/bootstrap/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/js/mainmenu/menu.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/css/default.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/css/layouts.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/css/shortcodes.css" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="/static/css/responsive-leyouts.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/js/masterslider/style/masterslider.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/Simple-Line-Icons-Webfont/simple-line-icons.css"
+          media="screen"/>
+    <link rel="stylesheet" href="/static/css/et-line-font/et-line-font.css">
+    <link href="/static/js/animations/css/animations.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/static/js/cubeportfolio/cubeportfolio.min.css">
+    <link href="/static/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/js/ytplayer/ytplayer.css"/>
+    <link rel="stylesheet" href="/static/js/style-swicher/style-swicher.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/js/custom-scrollbar/jquery.mCustomScrollbar.css">
+
+    <!-- Remove the below comments to use your color option -->
+    <link rel="stylesheet" href="/static/css/colors/green.css"/>
+    <!--<link rel="stylesheet" href="css/colors/orange.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/green.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/pink.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/red.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/purple.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/bridge.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/yellow.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/violet.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/cyan.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/mossgreen.css" />-->
+
+</head>
+
+<body>
+<div class="site_wrapper">
+    <div class="topbar orange2 topbar-padding">
+        <div class="container">
+            <div class="topbar-left-items">
+                {% comment %}<ul class="toplist toppadding pull-left paddtop1">
+          <li class="rightl">Customer Care</li>
+          <li>(888) 123-4567</li>
+        </ul>{% endcomment %}
+            </div>
+            <!--end left-->
+
+            <div class="topbar-right-items pull-right">
+                <ul class="toplist toppadding">
+                    <li class="lineright"><a href="#">Iniciar Sesión</a></li>
+                    <li class="lineright"><a href="#">Registrate</a></li>
+                    <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
+
+                    <li class="last"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div id="header">
+        <div class="container">
+            <div class="navbar navbar-default yamm">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid"
+                            class="navbar-toggle two three"><span class="icon-bar"></span><span class="icon-bar"></span><span
+                            class="icon-bar"></span></button>
+                    <a href="/" class="navbar-brand"><img src="/static/images/logo.png" alt=""/></a></div>
+
+                <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a href="/" class="dropdown-toggle active">Home</a></li>
+                        <li class="dropdown yamm-fw"><a href="/projects/" class="dropdown-toggle">Proyectos</a></li>
+                        {% comment %}<li class="dropdown yamm-fw"> <a href="about2.html" class="dropdown-toggle">Pages</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <!-- Content container to add padding -->
+                  <div class="yamm-content">
+                    <div class="row">
+                      <ul class="col-sm-6 col-md-3 list-unstyled ">
+                        <li>
+                          <p> Pages 1 </p>
+                        </li>
+                        <li><a href="about.html"><i class="fa fa-angle-right"></i> &nbsp; About Style 1</a></li>
+                        <li><a href="about2.html"><i class="fa fa-angle-right"></i> &nbsp; About Style 2</a></li>
+                        <li><a href="about3.html"><i class="fa fa-angle-right"></i> &nbsp; About Style 3</a></li>
+                        <li><a href="about4.html"><i class="fa fa-angle-right"></i> &nbsp; About Me</a></li>
+                        <li><a href="team.html"><i class="fa fa-angle-right"></i> &nbsp; Team Member</a></li>
+                        <li><a href="left-nav.html"><i class="fa fa-angle-right"></i> &nbsp; Left Navigation</a></li>
+                      </ul>
+                      <ul class="col-sm-6 col-md-3 list-unstyled ">
+                        <li>
+                          <p> Pages 2 </p>
+                        </li>
+                        <li><a href="services.html"><i class="fa fa-angle-right"></i> &nbsp; Services Style 1</a></li>
+                        <li><a href="services2.html"><i class="fa fa-angle-right"></i> &nbsp; Services Style 2</a></li>
+                        <li><a href="services3.html"><i class="fa fa-angle-right"></i> &nbsp; Services Style 3</a></li>
+                        <li><a href="services4.html"><i class="fa fa-angle-right"></i> &nbsp; Services Style 4</a></li>
+                        <li><a href="faq.html"><i class="fa fa-angle-right"></i> &nbsp; FAQ Style 1</a></li>
+                        <li><a href="faq2.html"><i class="fa fa-angle-right"></i> &nbsp; FAQ Style 2</a></li>
+                      </ul>
+                      <ul class="col-sm-6 col-md-3 list-unstyled ">
+                        <li>
+                          <p> Pages 3 </p>
+                        </li>
+                        <li><a href="full-width.html"><i class="fa fa-angle-right"></i> &nbsp; Full Width Page</a></li>
+                        <li><a href="left-sidebar.html"><i class="fa fa-angle-right"></i> &nbsp; Left Sidebar Page</a></li>
+                        <li><a href="right-sidebar.html"><i class="fa fa-angle-right"></i> &nbsp; Right Sidebar Page</a></li>
+                        <li><a href="packages.html"><i class="fa fa-angle-right"></i> &nbsp; Package Plans</a></li>
+                        <li><a href="careers.html"><i class="fa fa-angle-right"></i> &nbsp; Careers</a></li>
+                        <li><a href="coming-soon.html"><i class="fa fa-angle-right"></i> &nbsp; Coming Soon</a></li>
+                      </ul>
+                      <ul class="col-sm-6 col-md-3 list-unstyled ">
+                        <li>
+                          <p> Pages 4 </p>
+                        </li>
+                        <li><a href="login.html"><i class="fa fa-angle-right"></i> &nbsp; Login Form</a></li>
+                        <li><a href="register.html"><i class="fa fa-angle-right"></i> &nbsp; Registration Form</a></li>
+                        <li><a href="sitemap.html"><i class="fa fa-angle-right"></i> &nbsp; Sitemap</a></li>
+                        <li><a href="maintenance.html"><i class="fa fa-angle-right"></i> &nbsp; Maintenance</a></li>
+                        <li><a href="404.html"><i class="fa fa-angle-right"></i> &nbsp; 404 Error Page</a></li>
+                        <li><a href="404-2.html"><i class="fa fa-angle-right"></i> &nbsp; 404 Error Page2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>{% endcomment %}
+                        <li class="dropdown yamm-fw"><a href="/marks/" class="dropdown-toggle">Marcas Auspiciantes</a>
+                        </li>
+                        <li class="dropdown"><a href="/ideas/" class="dropdown-toggle">Ideas</a></li>
+                        <li class="dropdown"><a href="/blog/" class="dropdown-toggle">Blog</a></li>
+                        <li class="dropdown"><a href="/contact/" class="dropdown-toggle align-1">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end menu-->
+    <div class="clearfix"></div>
+
+    <!-- masterslider -->
+    <div class="master-slider ms-skin-default" id="masterslider">
+
+        <!-- slide 1 -->
+        <div class="ms-slide slide-1" data-delay="9">
+            <img src="/static/js/masterslider/blank.gif" data-src="/static/images/sliders/masterslider/28.jpg" alt=""/>
+
+            <h3 class="ms-layer text76"
+                style="left: 400px;top: 180px;"
+                data-type="text"
+                data-delay="500"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="left(250)"> Digital</h3>
+
+            <h3 class="ms-layer text77"
+                style="left: 200px;top: 260px;"
+                data-type="text"
+                data-delay="1000"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="right(250)"> Agency</h3>
+
+            <h3 class="ms-layer small-line"
+                style="left: 370px;top: 380px;"
+                data-type="text"
+                data-delay="1500"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="left(250)"></h3>
+
+            <h3 class="ms-layer text78"
+                style="left: 250px;top: 385px;"
+                data-type="text"
+                data-delay="2000"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="right(250)"> We are creative</h3>
+
+            <h3 class="ms-layer small-line"
+                style="left: 370px;top:430px;"
+                data-type="text"
+                data-delay="2500"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="left(250)"></h3>
+        </div>
+        <!-- end slide 1 -->
+
+        <!-- slide 2 -->
+        <div class="ms-slide slide-2" data-delay="9">
+
+            <img src="/static/js/masterslider/blank.gif" data-src="/static/images/sliders/masterslider/15.jpg" alt=""/>
+
+
+            <img src="/static/js/masterslider/blank.gif" data-src="/static/images/sliders/masterslider/screen2.png"
+                 alt=""
+                 style="right: 260px; top: 160px;"
+                 class="ms-layer"
+                 data-type="image"
+                 data-delay="500"
+                 data-duration="2500"
+                 data-ease="easeOutExpo"
+                 data-effect="scalefrom(1.1,1.1,190,0)"
+            />
+
+            <img src="/static/js/masterslider/blank.gif" data-src="/static/images/sliders/masterslider/screen1.png" alt=""
+                 style="left: 810px; top: 200px;"
+                 class="ms-layer"
+                 data-type="image"
+                 data-delay="1000"
+                 data-duration="2500"
+                 data-ease="easeOutExpo"
+                 data-effect="scalefrom(1.1,1.1,190,0)"
+            />
+
+            <h3 class="ms-layer text58"
+                style="left: 230px;top: 200px;"
+                data-type="text"
+                data-delay="1500"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="scale(1.5,1.6)"> One Page Layouts & </h3>
+
+            <h3 class="ms-layer text59"
+                style="left: 230px;top: 245px;"
+                data-type="text"
+                data-delay="2000"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="scale(1.5,1.6)"> Many More Features </h3>
+
+            <h3 class="ms-layer text3"
+                style="left: 230px; top: 330px;"
+                data-type="text"
+                data-effect="top(45)"
+                data-duration="2000"
+                data-delay="2500"
+                data-ease="easeOutExpo"> Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo
+                <br/>
+                Praesent mattis commodo augue Aliquam ornare. </h3>
+
+            <a class="ms-layer sbut1"
+               style="left: 230px; top: 420px;"
+               data-type="text"
+               data-delay="3000"
+               data-ease="easeOutExpo"
+               data-duration="1200"
+               data-effect="scale(1.5,1.6)"> Read More </a>
+
+            <a class="ms-layer sbut2"
+               style="left: 390px; top: 420px;"
+               data-type="text"
+               data-delay="3000"
+               data-ease="easeOutExpo"
+               data-duration="1200"
+               data-effect="scale(1.5,1.6)"> Purchase now ! </a>
+
+        </div>
+        <!-- end slide 2 -->
+
+        <!-- slide 3 -->
+        <div class="ms-slide slide-3" data-delay="9">
+            <img src="/static/js/masterslider/blank.gif" data-src="/static/images/sliders/masterslider/29.jpg" alt=""/>
+
+            <h3 class="ms-layer box-white"
+                style="right: 500px;top:100px;"
+                data-type="text"
+                data-delay="500"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="left(250)"></h3>
+
+            <h3 class="ms-layer text82"
+                style="left: 430px;top: 180px;"
+                data-type="text"
+                data-delay="1500"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="left(250)"> Modern & </h3>
+
+            <h3 class="ms-layer text83"
+                style="left: 230px;top: 260px;"
+                data-type="text"
+                data-delay="2000"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="right(250)"> Creative</h3>
+
+            <h3 class="ms-layer small-line"
+                style="left: 370px;top: 380px;"
+                data-type="text"
+                data-delay="2500"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="left(250)"></h3>
+            <h3 class="ms-layer text78"
+                style="left: 250px;top: 385px;"
+                data-type="text"
+                data-delay="3000"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="right(250)"> We are creative</h3>
+
+            <h3 class="ms-layer small-line"
+                style="left: 370px;top:430px;"
+                data-type="text"
+                data-delay="3500"
+                data-ease="easeOutExpo"
+                data-duration="1230"
+                data-effect="left(250)"></h3>
+        </div>
+        <!-- end slide 3 -->
+
+    </div>
+    <!-- end of masterslider -->
+    <div class="clearfix"></div>
+
+    <section class="sec-padd-default-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h6 class="nopadding lspace-1">¿Quiénes somos?</h6>
+                    <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Acerca <span
+                            class="text-orange-2">de Nosotros</span></h1>
+                    <div class="title-line-4 align-center"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6 col-sm-12 col-xs-12 bmargin animate-in" data-anim-type="fade-in-right"
+                     data-anim-delay="100">
+                    <div class="col-md-6 col-sm-6 col-xs-12 nopadding">
+                        <div class="feature-box-101 bmargin">
+                            <div class="circle">
+                                <h4 class="title text-white">Nuestra Historia</h4>
+                            </div>
+                            <div class="img"><img src="/static/images/764.jpg" alt=""/></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 padding-left-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer elit. </p>
+                        <br/>
+                        <a href="#" class="read-more orange-2"> <i class="fa fa-long-arrow-right"></i> Read more</a>
+                    </div>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-6 col-sm-12 col-xs-12 bmargin animate-in" data-anim-type="fade-in-left"
+                     data-anim-delay="200">
+                    <div class="col-md-6 col-sm-6 col-xs-12 nopadding">
+                        <div class="feature-box-101 bmargin">
+                            <div class="circle">
+                                <h4 class="title text-white">Nuestra Pasión</h4>
+                            </div>
+                            <div class="img"><img src="/static/images/765.jpg" alt=""/></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 padding-left-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer elit. </p>
+                        <br/>
+                        <a href="#" class="read-more orange-2"> <i class="fa fa-long-arrow-right"></i> Read more</a>
+                    </div>
+                </div>
+                <!--end item-->
+
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <div class="clearfix"></div>
+    <section>
+        <div class="videobgholder">
+            <div id="wrapper">
+                <div id="customElement">
+                    <div class="container-fluid nopadding">
+                        <div class="video-overlay bg-opacity-5">
+                            <div class="container video-toppadd video-bopadd">
+                                <div class="col-md-8 col-centered text-center">
+                                    <h2 class="text-white section-title ubuntu less-mar2 uppercase">Add Your Own</h2>
+                                    <h2 class="text-white section-title ubuntu uppercase">Youtube Video Backgrounds</h2>
+                                    <button id="togglePlay" class="command vbutton pause"
+                                            onclick="jQuery('#video').YTPTogglePlay(changeLabel)">Pause
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="video" class="player"
+               data-property="{videoURL:'CWqndeS1Iu0',containment:'#customElement', showControls:false, autoPlay:true, loop:true, vol:50, mute:true, startAt:90,  stopAt:109, opacity:1, addRaster:true, quality:'hd720', optimizeDisplay:true}">My
+                video</a></div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <section class="sec-padd-default-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h6 class="nopadding lspace-1">Conocenos</h6>
+                    <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Nuestro Equipo de <span class="text-orange-2">Trabajo</span>
+                    </h1>
+                    <div class="title-line-4 align-center"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-holder15 two bmargin">
+                        <div class="team-member"><img src="/static/images/771.jpg" alt="" class="img-responsive"/></div>
+                        <div class="info-box text-center">
+                            <h5 class="uppercase less-mar2">John William</h5>
+                            <span class="text-orange-2">Founder and CEO</span> <br/>
+                            <br/>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo et
+                                Praesent Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-holder15 two bmargin">
+                        <div class="team-member"><img src="/static/images/773.jpg" alt="" class="img-responsive"/></div>
+                        <div class="info-box text-center">
+                            <h5 class="uppercase less-mar2">Charlotte</h5>
+                            <span class="text-orange-2">Manager</span> <br/>
+                            <br/>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo et
+                                Praesent Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-holder15 two bmargin">
+                        <div class="team-member"><img src="/static/images/772.jpg" alt="" class="img-responsive"/></div>
+                        <div class="info-box text-center">
+                            <h5 class="uppercase less-mar2">Benjamin</h5>
+                            <span class="text-orange-2">Creative Designer</span> <br/>
+                            <br/>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo et
+                                Praesent Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end item-->
+
+            </div>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <!--end section-->
+
+    <section class="section-light section-side-image clearfix">
+        <div class="img-holder col-md-6 col-sm-3 pull-left">
+            <div class="background-imgholder" style="background:url(/static/images/774.jpg);"><img
+                    class="nodisplay-image" src="/static/images/774.jpg" alt=""/></div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 text-inner clearfix align-left">
+                    <div class="text-box white padding-7">
+                        <div class="col-xs-12 text-left">
+                            <h6 class="nopadding lspace-1">¿Qué hacemos?</h6>
+                            <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Nuestros
+                                <span class="text-orange-2">Servicios</span></h1>
+                            <div class="title-line-4"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-4">
+                            <div class="feature-box-103 text-center bmargin">
+                                <div class="iconbox-medium round grayoutline2"><span class="icon-lightbulb"></span>
+                                </div>
+                                <br/>
+                                <h4>User Analysis</h4>
+                                <p>Lorem ipsum dolor sit amet, sit et
+                                    justoconsectetuer adipiscing elit. Suspendisse justo.</p>
+                            </div>
+                        </div>
+                        <!--end item-->
+
+                        <div class="col-md-4">
+                            <div class="feature-box-103 text-center bmargin active">
+                                <div class="iconbox-medium round grayoutline2"><span class="icon-basket"></span></div>
+                                <br/>
+                                <h4>Branding</h4>
+                                <p>Lorem ipsum dolor sit amet, sit et
+                                    justoconsectetuer adipiscing elit. Suspendisse justo.</p>
+                            </div>
+                        </div>
+                        <!--end item-->
+
+                        <div class="col-md-4">
+                            <div class="feature-box-103 text-center bmargin">
+                                <div class="iconbox-medium round grayoutline2"><span class="icon-layers"></span></div>
+                                <br/>
+                                <h4>Responsive</h4>
+                                <p>Lorem ipsum dolor sit amet, sit et
+                                    justoconsectetuer adipiscing elit. Suspendisse justo.</p>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="clearfix"></div>
+                        <br/>
+                        <br/>
+                        <a href="#" class="btn btn-orange-2 dark btn-xround">Read more</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class=" clearfix"></div>
+
+    <section class="sec-padding section-orange-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h1 class="dosis text-white lspace-sm">Newsletter</h1>
+                    <p class="sub-title text-white">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse
+                        et.</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12">
+                    <div class="input_holder">
+                        <input class="email_input" type="search" placeholder="Enter your Email Address">
+                        <input name="submit" value="Subscribe" class="email_submit" type="submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <section class="sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h6 class="nopadding lspace-1">How We Do</h6>
+                    <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Our Work Proce<span
+                            class="text-orange-2">ss</span></h1>
+                    <div class="title-line-4 align-center"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center animate-in" data-anim-type="fade-in-right"
+                     data-anim-delay="100">
+                    <div class="feature-box-102 bmargin">
+                        <div class="number-1"></div>
+                        <br/>
+                        <h4>User Analysis</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sit justo. Suspendisse et justo.</p>
+                    </div>
+                </div>
+                <!--end item -->
+
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center animate-in" data-anim-type="fade-in-right"
+                     data-anim-delay="200">
+                    <div class="feature-box-102 bmargin">
+                        <div class="number-2"></div>
+                        <br/>
+                        <h4>Designing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sit justo. Suspendisse et justo.</p>
+                    </div>
+                </div>
+                <!--end item -->
+
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center animate-in" data-anim-type="fade-in-right"
+                     data-anim-delay="300">
+                    <div class="feature-box-102 bmargin">
+                        <div class="number-3"></div>
+                        <br/>
+                        <h4>Implementing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sit justo. Suspendisse et justo.</p>
+                    </div>
+                </div>
+                <!--end item -->
+
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center animate-in" data-anim-type="fade-in-right"
+                     data-anim-delay="400">
+                    <div class="feature-box-102 bmargin">
+                        <div class="number-4"></div>
+                        <br/>
+                        <h4>Testing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sit justo. Suspendisse et justo.</p>
+                    </div>
+                </div>
+                <!--end item -->
+
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <div class="clearfix"></div>
+
+    <section>
+        <div class="container">
+            <div class="divider-line solid light opacity-5"></div>
+            <div class="row sec-padd-default-page">
+                <div class="col-xs-12 text-center">
+                    <h6 class="nopadding lspace-1">Latest News</h6>
+                    <h1 class="paddtop1 dosis font-weight-5 lspace-sm">From the Bl<span class="text-orange-2">og</span>
+                    </h1>
+                    <div class="title-line-4 align-center"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="blog-holder-13 bmargin">
+                        <div class="image-holder">
+                            <div class="shapes"></div>
+                            <div class="post-date-box"> 15 <span>August, 2015</span> <span class="icon"><i
+                                    class="fa fa-picture-o"></i></span></div>
+                            <img src="/static/images/blog/31.jpg" alt="" class="img-responsive"/></div>
+                        <div class="clearfix"></div>
+                        <br/>
+                        <br/>
+                        <a href="#">
+                            <h3>Aliquam ornare hendrerit augue</h3>
+                        </a>
+                        <div class="blog-post-info"><span><i class="fa fa-user"></i> By Benjamin</span> <span><i
+                                class="fa fa-comments-o"></i> 15 Comments</span> <span><i class="fa fa-folder-open"></i> category / Business</span>
+                        </div>
+                        <br/>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent
+                            mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est.
+                            Lorem ipsum dolor sit amet .</p>
+                    </div>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="blog-holder-13 bmargin">
+                        <div class="image-holder">
+                            <div class="shapes"></div>
+                            <div class="post-date-box"> 25 <span>July, 2015</span> <span class="icon"><i
+                                    class="fa fa-film"></i></span></div>
+                            <img src="/static/images/blog/32.jpg" alt="" class="img-responsive"/></div>
+                        <div class="clearfix"></div>
+                        <br/>
+                        <br/>
+                        <h3><a href="#">Aliquam ornare hendrerit augue</a></h3>
+                        <div class="blog-post-info"><span><i class="fa fa-user"></i> By Benjamin</span> <span><i
+                                class="fa fa-comments-o"></i> 15 Comments</span> <span><i class="fa fa-folder-open"></i> category / Business</span>
+                        </div>
+                        <br/>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent
+                            mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est.
+                            Lorem ipsum dolor sit amet .</p>
+                    </div>
+                </div>
+                <!--end item-->
+
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <div class="clearfix"></div>
+
+    <section class="parallax-section68">
+        <div class="section-overlay bg-opacity-4">
+            <div class="container sec-tpadding-3 sec-bpadding-3">
+                <div class="row">
+                    <div class="col-md-8 col-centered">
+                        <h6 class="text-white lspace-3">Parallax</h6>
+                        <h1 class="text-uppercase text-white text-bold4 big-text">Background</h1>
+                        <br/>
+                        <br/>
+                        <a class="btn btn-orange-2 btn-xround" href="#">Read more</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <section class="sec-padd-default-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h6 class="nopadding lspace-1">Package Details</h6>
+                    <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Our Prici<span class="text-orange-2">ng</span>
+                    </h1>
+                    <div class="title-line-4 align-center"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="pricetable-top-bg-strip"></div>
+                    <div class="pricetable-holder7">
+                        <div class="title-box">
+                            <h3 class="title font-weight-5 less-mar2">Basic</h3>
+                            <div class="price"><sup>$</sup>9.99<i>/ mo</i></div>
+                        </div>
+                        <ul class="features-list">
+                            <li>1 GB Bandwidth</li>
+                            <li>256 MB Memory</li>
+                            <li>Unlimited</li>
+                            <li>Full Support</li>
+                            <li>Free Domain</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <br/>
+                        <br/>
+                        <a class="btn btn-orange-2 dark btn-xround" href="#">Order Now !</a></div>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="pricetable-top-bg-strip"></div>
+                    <div class="pricetable-holder7">
+                        <div class="title-box">
+                            <h3 class="title font-weight-5 less-mar2">Standard</h3>
+                            <div class="price"><sup>$</sup>29.9<i>/ mo</i></div>
+                        </div>
+                        <ul class="features-list">
+                            <li>1 GB Bandwidth</li>
+                            <li>256 MB Memory</li>
+                            <li>Unlimited</li>
+                            <li>Full Support</li>
+                            <li>Free Domain</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <br/>
+                        <br/>
+                        <a class="btn btn-orange-2 dark btn-xround" href="#">Order Now !</a></div>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="pricetable-active-bg-strip"></div>
+                    <div class="pricetable-holder7 active bmargin">
+                        <div class="ribbon"><img src="/static/images/777.png" alt=""/></div>
+                        <div class="title-box">
+                            <h3 class="title font-weight-5 less-mar2">Premium</h3>
+                            <div class="price"><sup>$</sup>39.9<i>/ mo</i></div>
+                        </div>
+                        <ul class="features-list">
+                            <li>1 GB Bandwidth</li>
+                            <li>256 MB Memory</li>
+                            <li>Unlimited</li>
+                            <li>Full Support</li>
+                            <li>Free Domain</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <br/>
+                        <br/>
+                        <a class="btn btn-white btn-xround" href="#">Order Now !</a></div>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="pricetable-top-bg-strip"></div>
+                    <div class="pricetable-holder7">
+                        <div class="title-box">
+                            <h3 class="title font-weight-5 less-mar2">Unlimited</h3>
+                            <div class="price"><sup>$</sup>49.9<i>/ mo</i></div>
+                        </div>
+                        <ul class="features-list">
+                            <li>1 GB Bandwidth</li>
+                            <li>256 MB Memory</li>
+                            <li>Unlimited</li>
+                            <li>Full Support</li>
+                            <li>Free Domain</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <br/>
+                        <br/>
+                        <a class="btn btn-orange-2 dark btn-xround" href="#">Order Now !</a></div>
+                </div>
+                <!--end item-->
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <div class="clearfix"></div>
+
+
+    <section class="parallax-section69">
+        <div class="section-overlay bg-opacity-7">
+            <div class="container sec-tpadding-3 sec-bpadding-3">
+                <div class="row slide-controls-color-13">
+                    <div class="col-md-8 col-centered">
+                        <div class="col-xs-12 text-center">
+                            <h6 class="nopadding lspace-1 text-white">Our Clients</h6>
+                            <h1 class="paddtop1 dosis font-weight-5 text-white lspace-sm">People Sa<span
+                                    class="text-orange-2">ys</span></h1>
+                            <div class="title-line-4 white align-center"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div id="owl-demo3" class="owl-carousel">
+                            <div class="item">
+                                <blockquote class="style1"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est.</span>
+                                </blockquote>
+                                <br/>
+                                <h5 class="text-white less-mar1">Emily</h5>
+                                <span class="text-orange-2">Nullam turpis</span></div>
+                            <!--end slide item-->
+
+                            <div class="item">
+                                <blockquote class="style1"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est.</span>
+                                </blockquote>
+                                <br/>
+                                <h6 class="text-white less-mar1">Emily</h6>
+                                <span class="text-orange-2">Nullam turpis</span></div>
+                            <!--end slide item-->
+
+                        </div>
+                        <!--end carousel -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <section class="section-less-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="clientlogo-list">
+                        <li><img src="/static/images/client-logo1.png" alt=""/></li>
+                        <li><img src="/static/images/client-logo2.png" alt=""/></li>
+                        <li><img src="/static/images/client-logo3.png" alt=""/></li>
+                        <li><img src="/static/images/client-logo4.png" alt=""/></li>
+                        <li><img src="/static/images/client-logo5.png" alt=""/></li>
+                        <li><img src="/static/images/client-logo6.png" alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end section -->
+    <div class="clearfix"></div>
+
+    <section class="section-orange-2 section-less-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h3 class="text-white">Beautiful Masonry Portfolio Styles</h3>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo
+                        Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a
+                        est Curabitur eget orci.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="margin-top2"></div>
+                    <a class="btn btn-border white-2 btn-large pull-right" href="#">Read more</a></div>
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <section class="section-fulldark sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 colmargin clearfix">
+                    <div class="footer-logo"><img src="/static/images/footer-logo.png" alt=""/></div>
+                    <ul class="address-info no-border">
+                        <li>Address: No.28 - 63739 street lorem ipsum City, Country</li>
+                        <li><i class="fa fa-home"></i> Phone: + 1 (234) 567 8901</li>
+                        <li><i class="fa fa-phone"></i> Phone: + 1 (234) 567 8901</li>
+                        <li><i class="fa fa-fax"></i> Fax: + 1 (234) 567 8901</li>
+                        <li class="last"><i class="fa fa-envelope"></i> Email: support@yoursite.com</li>
+                    </ul>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-3 col-sm-12 colmargin clearfix">
+                    <h4 class="uppercase footer-title less-mar3">Recent Posts</h4>
+                    <div class="footer-title-bottomstrip"></div>
+                    <div class="image-left">
+                        <div class="fo-postimg-inner overflow-hidden"><img src="/static/images/site-img16.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="text-box-right">
+                        <h5 class="text-white less-mar3"><a href="#">Clean And Modern</a></h5>
+                        <span>Lorem ipsum dolor sit</span>
+                        <div class="footer-post-info"><span>By John Doe</span><span> May 20</span></div>
+                    </div>
+                    <div class="divider-line solid dark margin opacity-5"></div>
+                    <div class="image-left">
+                        <div class="fo-postimg-inner overflow-hidden"><img src="/static/images/site-img17.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="text-box-right">
+                        <h5 class="text-white less-mar3"><a href="#">Clean And Modern</a></h5>
+                        <span>Lorem ipsum dolor sit</span>
+                        <div class="footer-post-info"><span>By John Doe</span><span> May 20</span></div>
+                    </div>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-3 col-sm-12 colmargin clearfix">
+                    <h4 class="uppercase footer-title less-mar3">Tags</h4>
+                    <div class="footer-title-bottomstrip"></div>
+                    <ul class="footer-tags">
+                        <li><a href="#">Animation</a></li>
+                        <li><a href="#">Art</a></li>
+                        <li><a href="#">Photography</a></li>
+                        <li><a class="active" href="#">Design</a></li>
+                        <li><a href="#">Responsive</a></li>
+                        <li><a href="#">Develop</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Clean</a></li>
+                    </ul>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-3 col-sm-12 colmargin tex-left clearfix">
+                    <h4 class="uppercase footer-title less-mar3">useful links</h4>
+                    <div class="footer-title-bottomstrip"></div>
+                    <div class="clearfix"></div>
+                    <ul class="usefull-links tex-left no-border">
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Aliquam porttitor vestibulum ipsum</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
+                    </ul>
+                </div>
+                <!--end item-->
+
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <section class="section-copyrights section-less-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class=" social-icons-3">
+                        <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
+
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="active" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-wordpress"></i></a></li>
+                        <li><a href="#"><i class="fa fa-android"></i></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <br/>
+                    <span>Copyright © 2020 <a href="https://1.envato.market/hasta-html-by-codelayers">hasta</a> By <a
+                            href="https://1.envato.market/codelayers">Codelayers</a> | All rights reserved.</span></div>
+            </div>
+        </div>
+    </section>
+    <a href="#" class="scrollup"></a><!-- end scroll to top of the page-->
+
+</div>
+<!--end sitewraper-->
+
+<!-- ========== Js Files ========== -->
+
+<script type="text/javascript" src="/static/js/universal/jquery.js"></script>
+<script src="/static/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="/static/js/mainmenu/customeUI.js"></script>
+<script src="/static/js/mainmenu/jquery.sticky.js"></script>
+<script src="/static/js/masterslider/masterslider.min.js"></script>
+<script type="text/javascript">
+    (function ($) {
+        "use strict";
+        var slider = new MasterSlider();
+        // adds Arrows navigation control to the slider.
+        slider.control('arrows');
+        slider.control('bullets');
+
+        slider.setup('masterslider', {
+            width: 1600,    // slider standard width
+            height: 650,   // slider standard height
+            space: 0,
+            speed: 45,
+            layout: 'fullwidth',
+            loop: true,
+            preload: 0,
+            autoplay: true,
+            view: "parallaxMask"
+        });
+    })(jQuery);
+</script>
+<script type="text/javascript" src="/static/js/ytplayer/jquery.mb.YTPlayer.js"></script>
+<script type="text/javascript" src="/static/js/ytplayer/elementvideo-custom.js"></script>
+<script type="text/javascript" src="/static/js/ytplayer/play-pause-btn.js"></script>
+<script type="text/javascript" src="/static/js/cubeportfolio/jquery.cubeportfolio.min.js"></script>
+<script type="text/javascript" src="/static/js/cubeportfolio/main.js"></script>
+<script src="/static/js/animations/js/animations.min.js" type="text/javascript"></script>
+<script src="/static/js/animations/js/appear.min.js" type="text/javascript"></script>
+<script src="/static/js/scrolltotop/totop.js"></script>
+<script src="/static/js/owl-carousel/owl.carousel.js"></script>
+<script src="/static/js/owl-carousel/custom.js"></script>
+<script src="/static/js/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/static/js/style-swicher/style-swicher.js"></script>
+<script src="/static/js/style-swicher/custom.js"></script>
+<script src="/static/js/scripts/functions.js" type="text/javascript"></script>
+</body>
+</html>
