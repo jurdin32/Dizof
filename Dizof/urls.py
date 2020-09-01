@@ -22,8 +22,8 @@ from Home.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index.as_view(), name="index"),
-    path('projects/', proyectos.as_view(), name="proyectos")
+    path('',index, name="index"),
+    path('projects/', proyectos, name="proyectos")
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 admin.site.site_header = 'Administración de DIzof'

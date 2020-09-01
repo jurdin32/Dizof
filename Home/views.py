@@ -1,11 +1,25 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.views.generic import TemplateView
 
 
-class index(TemplateView):
-    template_name = "index.html"
+from Home.models import Categoria, Proyectos
 
-class proyectos(TemplateView):
-    template_name = "proyectos.html"
+
+def index(request):
+    return render(request,"index.html")
+
+def proyectos(request):
+    proyectos=Proyectos.objects.all()
+    categoria=None
+    if request.GET.get("projects"):
+        proyectos=Proyectos.objects.filter(categoria=request.GET.get("projects"))
+        categoria=Categoria.objects.get(id=request.GET.get("projects"))
+    contexto = {
+        "categorias":Categoria.objects.all(),
+        "proyectos":proyectos,
+        "categoria":categoria,
+    }
+
+    return render(request,"proyectos.html",contexto)
+

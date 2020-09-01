@@ -6,8 +6,8 @@
   <section>
     <div class="header-inner two">
       <div class="inner text-center">
-        <h4 class="title text-white uppercase">We Are Hasta</h4>
-        <h5 class="text-white uppercase">Get Many More Features</h5>
+        <h4 class="title text-white uppercase">Nuestros Proyectos</h4>
+        <h5 class="text-white uppercase">{% if request.GET.projects %}{{ categoria.nombre }}{% else %}Todos{% endif %}</h5>
       </div>
       <div class="overlay bg-opacity-5"></div>
       <img src="../static/images/header-img.jpg" alt="" class="img-responsive"/> </div>
@@ -34,114 +34,31 @@
       <div class="container">
         <div class="row">
           <div id="filters-container" class="cbp-l-filters-button two three text-right">
-            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> Show All
+              <div data-filter="*" class="cbp-filter-item {% if not  categoria %}cbp-filter-item-active{% endif %}"> <a href="/projects/">Todos</a>
               <div class="cbp-filter-counter"></div>
             </div>
-            <div data-filter=".identity" class="cbp-filter-item"> Identity
-              <div class="cbp-filter-counter"></div>
-            </div>
-            <div data-filter=".web-design" class="cbp-filter-item"> Web Design
-              <div class="cbp-filter-counter"></div>
-            </div>
-            <div data-filter=".graphic" class="cbp-filter-item"> Graphic
-              <div class="cbp-filter-counter"></div>
-            </div>
-            <div data-filter=".logos" class="cbp-filter-item"> Logos
-              <div class="cbp-filter-counter"></div>
-            </div>
+              {% for cat in categorias %}
+              <div data-filter=".x{{ cat.id }}" class="cbp-filter-item {% if categoria.id == cat.id %}cbp-filter-item-active{% endif %}"><a href="?projects={{ cat.id }}">{{ cat.nombre }}</a>
+                  <div class="cbp-filter-counter"></div>
+                </div>
+              {% endfor %}
           </div>
           <div class="demo-full-width">
             <div id="grid-container" class="cbp">
-              <div class="cbp-item identity"> <a href="../static/images/media/04.jpg" class="cbp-caption cbp-lightbox" data-title="Suspendisse Imperdiet<br>by Codelayers">
-                <div class="cbp-caption-defaultWrap"> <img src="../static/images/media/04.jpg" alt=""> </div>
+                {% for proyecto in proyectos %}
+                <div class="cbp-item x{{ proyecto.categoria_id }}"> <a href="/media/{{ proyecto.imagen }}" class="cbp-caption cbp-lightbox" data-title="Suspendisse Imperdiet<br>by Codelayers">
+                <div class="cbp-caption-defaultWrap"> <img src="/media/{{ proyecto.imagen }}" alt=""> </div>
                 <div class="cbp-caption-activeWrap">
                   <div class="cbp-l-caption-alignLeft">
                     <div class="cbp-l-caption-body">
-                      <div class="cbp-l-caption-title">Suspendisse Imperdiet </div>
-                      <div class="cbp-l-caption-desc">by Codelayers</div>
+                      <div class="cbp-l-caption-title">{{ proyecto.nombre}} </div>
+                      <div class="cbp-l-caption-desc">por: {{ proyecto.autor.nombre }}</div>
                     </div>
                   </div>
                 </div>
                 </a> </div>
-              <div class="cbp-item web-design"> <a href="../static/images/media/05.jpg" class="cbp-caption cbp-lightbox" data-title="Magna Tempus Urna<br>by Codelayers">
-                <div class="cbp-caption-defaultWrap"> <img src="../static/images/media/05.jpg" alt=""> </div>
-                <div class="cbp-caption-activeWrap">
-                  <div class="cbp-l-caption-alignLeft">
-                    <div class="cbp-l-caption-body">
-                      <div class="cbp-l-caption-title">Magna Tempus Urna</div>
-                      <div class="cbp-l-caption-desc">by Codelayers</div>
-                    </div>
-                  </div>
-                </div>
-                </a> </div>
-              <div class="cbp-item motion logos"> <a href="../static/images/media/06.jpg" class="cbp-caption cbp-lightbox" data-title="World Clock Widget<br>by Codelayers">
-                <div class="cbp-caption-defaultWrap"> <img src="../static/images/media/06.jpg" alt=""> </div>
-                <div class="cbp-caption-activeWrap">
-                  <div class="cbp-l-caption-alignLeft">
-                    <div class="cbp-l-caption-body">
-                      <div class="cbp-l-caption-title">Maecenas Sed </div>
-                      <div class="cbp-l-caption-desc">by Codelayers</div>
-                    </div>
-                  </div>
-                </div>
-                </a> </div>
-              <div class="cbp-item identity graphic"> <a href="../static/images/media/07.jpg" class="cbp-caption cbp-lightbox" data-title="Quisque Ornare <br>by Codelayers">
-                <div class="cbp-caption-defaultWrap"> <img src="../static/images/media/07.jpg" alt=""> </div>
-                <div class="cbp-caption-activeWrap">
-                  <div class="cbp-l-caption-alignLeft">
-                    <div class="cbp-l-caption-body">
-                      <div class="cbp-l-caption-title">Quisque Ornare </div>
-                      <div class="cbp-l-caption-desc">by Codelayers</div>
-                    </div>
-                  </div>
-                </div>
-                </a> </div>
-              <div class="cbp-item motion logos"> <a href="../static/images/media/08.jpg" class="cbp-caption cbp-lightbox" data-title="Skateshop Website<br>by Codelayers">
-                <div class="cbp-caption-defaultWrap"> <img src="../static/images/media/08.jpg" alt=""> </div>
-                <div class="cbp-caption-activeWrap">
-                  <div class="cbp-l-caption-alignLeft">
-                    <div class="cbp-l-caption-body">
-                      <div class="cbp-l-caption-title">Hendrerit Condimentum</div>
-                      <div class="cbp-l-caption-desc">by Codelayers</div>
-                    </div>
-                  </div>
-                </div>
-                </a> </div>
-              <div class="cbp-item web-design"> <a href="../static/images/media/09.jpg" class="cbp-caption cbp-lightbox" data-title="Donec Dapibus Placerat <br>by Codelayers">
-                <div class="cbp-caption-defaultWrap"> <img src="../static/images/media/09.jpg" alt=""> </div>
-                <div class="cbp-caption-activeWrap">
-                  <div class="cbp-l-caption-alignLeft">
-                    <div class="cbp-l-caption-body">
-                      <div class="cbp-l-caption-title">Donec Dapibus Placerat </div>
-                      <div class="cbp-l-caption-desc">by Codelayers</div>
-                    </div>
-                  </div>
-                </div>
-                </a> </div>
+                {% endfor %}
 
-                <div class="cbp-item logos"> <a href="../static/images/media/02.jpg" class="cbp-caption cbp-lightbox" data-title="Donec Dapibus Placerat <br>by Codelayers">
-                <div class="cbp-caption-defaultWrap"> <img src="../static/images/media/02.jpg" alt=""> </div>
-                <div class="cbp-caption-activeWrap">
-                  <div class="cbp-l-caption-alignLeft">
-                    <div class="cbp-l-caption-body">
-                      <div class="cbp-l-caption-title">Donec Dapibus Placerat </div>
-                      <div class="cbp-l-caption-desc">by Codelayers</div>
-                    </div>
-                  </div>
-                </div>
-                </a> </div>
-
-               <div class="cbp-item web-design"> <a href="../static/images/media/03.jpg" class="cbp-caption cbp-lightbox" data-title="Donec Dapibus Placerat <br>by Codelayers">
-                <div class="cbp-caption-defaultWrap"> <img src="../static/images/media/03.jpg" alt=""> </div>
-                <div class="cbp-caption-activeWrap">
-                  <div class="cbp-l-caption-alignLeft">
-                    <div class="cbp-l-caption-body">
-                      <div class="cbp-l-caption-title">Donec Dapibus Placerat </div>
-                      <div class="cbp-l-caption-desc">by Codelayers</div>
-                    </div>
-                  </div>
-                </div>
-                </a> </div>
 
             </div>
           </div>
