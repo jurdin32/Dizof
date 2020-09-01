@@ -1,6 +1,12 @@
 from django.db import models
 
 # Create your models here.
+
+class Principal(models.Model):
+    logo=models.ImageField(upload_to="logos")
+
+
+
 class Categoria(models.Model):
     nombre=models.CharField(max_length=50, help_text="NO mas de 50 Caracteres")
 
