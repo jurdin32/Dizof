@@ -174,11 +174,11 @@
                 {% endif %}
             <h3 class="ms-layer text82"
                 {% if slider.centro %}
-                style="text-align: center;top: 385px; font-size: 15px;position: relative"
+                style="text-align: center;top: 385px; font-size:{{ slider.text_size }}px !important; position: relative"
                 {% elif slider.izquierda %}
-                style="left: {{ slider.posicion_texto_decorativo }}px;top: 385px; font-size: calc({{ slider.text_size }}+5)px !important;"
+                style="left: {{ slider.posicion_texto_decorativo }}px;top: 385px; font-size: {{ slider.text_size }}px !important;"
                 {% elif slider.derecha %}
-                style="right: {{ slider.posicion_texto_decorativo }}px;top: 385px;font-size: calc({{ slider.text_size }}+5)px !important;"
+                style="right: {{ slider.posicion_texto_decorativo }}px;top: 385px;font-size: {{ slider.text_size }}px !important;"
                 {% endif %}
                 data-type="text"
                 data-delay="2000"
