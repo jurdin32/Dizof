@@ -468,3 +468,14 @@ a.loadmore-but.orange-2 {
     background-color: #fd602c;
 }
 
+.box-title{
+    width: 100%;
+    background-color: #fd602c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.box-title>a{
+    color: white
+}
+
