@@ -17,7 +17,7 @@ class Principal(models.Model):
                                         ("/static/css/colors/yellow.css", "Amarillo"),
                                         ("/static/css/colors/violet.css", "Violeta"),
                                         ("/static/css/colors/cyan.css", "Cyan"),
-                                        ("/static/css/colors/azull.css", "Azul"),
+                                        ("/static/css/colors/azul.css", "Azul"),
 
 
                                     )
