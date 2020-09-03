@@ -4,6 +4,23 @@ from django.db import models
 
 class Principal(models.Model):
     logo=models.ImageField(upload_to="logos")
+    color_interfaz=models.CharField(default="Verde",
+                                    max_length=100,
+                                    choices=(
+                                        ("/static/css/colors/green.css","Verde"),
+                                        ("/static/css/colors/mossgreen.css", "Verde Mostaza"),
+                                        ("/static/css/colors/bridge.css", "Verde Claro"),
+                                        ("/static/css/colors/orange.css","Naranja"),
+                                        ("/static/css/colors/pink.css","Rosado"),
+                                        ("/static/css/colors/red.css","Rojo"),
+                                        ("/static/css/colors/purple.css","Morado"),
+                                        ("/static/css/colors/yellow.css", "Amarillo"),
+                                        ("/static/css/colors/violet.css", "Violeta"),
+                                        ("/static/css/colors/cyan.css", "Cyan"),
+
+
+                                    )
+                    )
 
 class Slider(models.Model):
     imagen=models.ImageField(upload_to="Slider")
