@@ -467,3 +467,14 @@ a.loadmore-but.orange-2 {
 .pricetable-active-bg-strip {
     background-color: #3fc35f;
 }
+
+.box-title{
+    width: 100%;
+    background-color: #3fc35f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.box-title>a{
+    color: white
+}

@@ -18,8 +18,6 @@ class Principal(models.Model):
                                         ("/static/css/colors/violet.css", "Violeta"),
                                         ("/static/css/colors/cyan.css", "Cyan"),
                                         ("/static/css/colors/azul.css", "Azul"),
-
-
                                     )
                     )
 
