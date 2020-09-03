@@ -133,11 +133,11 @@
             <img src="/static/js/masterslider/blank.gif" data-src="/media/{{ slider.imagen }}" alt=""/>
             <h3 class="ms-layer text76"
                 {% if slider.centro %}
-                style="text-align: center;top: 100px; position: relative"
+                style="text-align: center;top: 100px; position: relative;font-size: calc({{ slider.text_size }}+20)px !important;"
                 {% elif slider.izquierda %}
-                style="left: {{ slider.posicion_frase1 }}px;top: 100px;"
+                style="left: {{ slider.posicion_frase1 }}px;top: 100px;font-size: calc({{ slider.text_size }}+20)px !important;"
                 {% elif slider.derecha %}
-                style="right: {{ slider.posicion_frase1 }}px;top: 100px;"
+                style="right: {{ slider.posicion_frase1 }}px;top: 100px;font-size: calc({{ slider.text_size }}+20)px !important;"
                 {% endif %}
                 data-type="text"
                 data-delay="500"
@@ -147,11 +147,11 @@
 
             <h3 class="ms-layer text77"
                 {% if slider.centro %}
-                style="text-align: center;top: 260px;position: relative"
+                style="text-align: center;top: 260px;position: relative;font-size: calc({{ slider.text_size }}+30)px !important;"
                 {% elif slider.izquierda %}
-                style="left: {{ slider.posicion_frase2 }}px;top: 260px;"
+                style="left: {{ slider.posicion_frase2 }}px;top: 260px;font-size: calc({{ slider.text_size }}+30)px !important;"
                 {% elif slider.derecha %}
-                style="right: {{ slider.posicion_frase2 }}px;top: 260px;"
+                style="right: {{ slider.posicion_frase2 }}px;top: 260px;font-size: calc({{ slider.text_size }}+30)px !important;"
                 {% endif %}
                 data-type="text"
                 data-delay="1000"
@@ -162,9 +162,9 @@
                 {% if not slider.centro %}
                  <h3 class="ms-layer small-line"
                     {% if slider.izquierda %}
-                    style="left: {{ slider.posicion_texto_decorativo }}px;top: 380px;"
+                    style="left: {{ slider.posicion_texto_decorativo }}px;top: 380px"
                     {% elif slider.derecha %}
-                    style="right: {{ slider.posicion_texto_decorativo }}px;top: 380px;"
+                    style="right: {{ slider.posicion_texto_decorativo }}px;top: 380px"
                     {% endif %}
                     data-type="text"
                     data-delay="1500"
@@ -176,9 +176,9 @@
                 {% if slider.centro %}
                 style="text-align: center;top: 385px; font-size: 15px;position: relative"
                 {% elif slider.izquierda %}
-                style="left: {{ slider.posicion_texto_decorativo }}px;top: 385px; font-size: 15px"
+                style="left: {{ slider.posicion_texto_decorativo }}px;top: 385px; font-size: calc({{ slider.text_size }}+5)px !important;"
                 {% elif slider.derecha %}
-                style="right: {{ slider.posicion_texto_decorativo }}px;top: 385px; font-size: 15px"
+                style="right: {{ slider.posicion_texto_decorativo }}px;top: 385px;font-size: calc({{ slider.text_size }}+5)px !important;"
                 {% endif %}
                 data-type="text"
                 data-delay="2000"

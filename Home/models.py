@@ -17,6 +17,7 @@ class Slider(models.Model):
     derecha=models.BooleanField(default=False)
     centro=models.BooleanField(default=False)
     duracion=models.IntegerField(default=9)
+    text_size=models.IntegerField(default=100)
 
 
 
