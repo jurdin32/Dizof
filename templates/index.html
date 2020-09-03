@@ -190,9 +190,9 @@
             {% if not slider.centro %}
             <h3 class="ms-layer small-line"
                 {% if slider.izquierda %}
-                style="left: {{ slider.posicion_texto_decorativo }}px;top:390px;"
+                style="left: {{ slider.posicion_texto_decorativo }}px;top:440px;"
                 {% elif slider.derecha %}
-                style="right: {{ slider.posicion_texto_decorativo }}px;top:390px;"
+                style="right: {{ slider.posicion_texto_decorativo }}px;top:440px;"
                 {% endif %}
                 data-type="text"
                 data-delay="2500"
@@ -893,7 +893,6 @@
 <script src="/static/js/scripts/functions.js" type="text/javascript"></script>
 <style>
     .ms-slide .ms-layer, .ms-fixed-layers .ms-layer {
-        position: relative;
         pointer-events: auto;
     }
 </style>
