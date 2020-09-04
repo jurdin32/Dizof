@@ -1,0 +1,72 @@
+{% extends "index.html" %}
+{% block slider %}
+
+{% endblock %}
+{% block contenido %}
+
+    <section>
+        <div class="header-inner two">
+            <div class="inner text-center">
+                <h4 class="title text-white uppercase">A cerca de nosotros</h4>
+                <h5 class="text-white uppercase">Nuestra Pasión</h5>
+            </div>
+            <div class="overlay bg-opacity-5"></div>
+            <img src="/static/images/header-img.jpg" alt="" class="img-responsive"/></div>
+    </section>
+    <!-- end header inner -->
+    <div class="clearfix"></div>
+
+    <section>
+        <div class="pagenation-holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Nuestra Pasión</h3>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <div class="pagenation_links"><a href="/">Home</a><i> / </i> <a href="">A cerca de</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <section class="sec-padding">
+        <div class="container">
+            <div class="row">
+                {% for historia in historias %}
+                <div class="col-md-12 bmargin">
+                    <div class="blog-holder-12">
+                        <div class="image-holder">
+                            {% if historia.fecha %}
+                            <div class="overlay bg-opacity-1">
+                                <div class="post-date-box"> {{ historia.fecha|date:"d" }} <span>{{ historia.fecha|date:"M, Y" }}</span></div>
+                            </div>
+                            {% endif %}
+                            <img class="img-responsive" alt="" src="/media/{{ historia.imagen }}">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br/>
+                    <h3 class="less-mar1">{{ historia.titulo}}</h3>
+                    <div class="blog-post-info"><span><i class="fa fa-user"></i> {{ historia.escritor}}</span> <span><i
+                            class="fa fa-eye"></i> {{historia.visitas }} Visitas</span></div>
+                    <br/>
+                    <p>{{ historia.contenido|safe }}</p>
+                    <!--end item-->
+
+                    <div class="clearfix"></div>
+                    <div class="col-divider-margin-4"></div>
+                    <div class="clearfix"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!--end item -->
+    <div class="clearfix"></div>
+    <a href="#" class="scrollup"></a><!-- end scroll to top of the page-->
+
+{% endblock %}

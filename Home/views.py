@@ -14,7 +14,7 @@ def index(request):
     return render(request,"index.html",contexto)
 
 def historia(request):
-    historias=Historia.objects.all()
+    historias=Historia.objects.filter(tipo="Historia")
     for historia in historias:
         historia.visitas+=1
         historia.save()
@@ -24,6 +24,18 @@ def historia(request):
         "historias":historias,
     }
     return render(request,"historia.html",contexto)
+
+def pasion(request):
+    historias=Historia.objects.filter(tipo="Pasion")
+    for historia in historias:
+        historia.visitas+=1
+        historia.save()
+
+    contexto={
+        "principal": Principal.objects.last(),
+        "historias":historias,
+    }
+    return render(request,"pasion.html",contexto)
 
 def proyectos(request):
     proyectos=Proyectos.objects.all()

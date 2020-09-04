@@ -23,12 +23,14 @@ class Principal(models.Model):
                     )
 
 class Historia(models.Model):
-    imagen=models.ImageField(upload_to="Historia")
-    fecha=models.DateField()
-    titulo=models.CharField(max_length=100, default="")
+    tipo=models.CharField(max_length=30,choices=(("Pasion","Pasión"),("Historia","Historia")), default="Historia")
+    imagen=models.ImageField(upload_to="Historia",null=True,blank=True)
+    fecha=models.DateField(null=True,blank=True)
+    titulo=models.CharField(max_length=100,null=True,blank=True)
     escritor=models.CharField(max_length=60, default="admin")
     visitas=models.IntegerField(default=1)
     contenido=RichTextField()
+
 
 class Slider(models.Model):
     imagen=models.ImageField(upload_to="Slider")
