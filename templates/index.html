@@ -275,40 +275,41 @@
     </section>
     <!--end section-->
     <div class="clearfix"></div>
-
-    <section class="sec-padd-default-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h6 class="nopadding lspace-1">Conocenos</h6>
-                    <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Nuestro Equipo de <span class="text-orange-2">Trabajo</span>
-                    </h1>
-                    <div class="title-line-4 align-center"></div>
-                </div>
-                <div class="clearfix"></div>
-                <!--empieza -->
-                {% for equipo in equipos %}
-                <div class="col-md-4 col-sm-6">
-                    <div class="team-holder15 two bmargin">
-                        <div class="team-member"><img src="/media/{{ equipo.imagen }}" alt="" class="img-responsive"/></div>
-                        <div class="info-box text-center">
-                            <h5 class="uppercase less-mar2">{{ equipo.nombre}}</h5>
-                            <span class="text-orange-2">{{ equipo.cargo }}</span> <br/>
-                            <br/>
-                            <p>{{ equipo.descripcion }}</p>
+    {% if equipos %}
+        <section class="sec-padd-default-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h6 class="nopadding lspace-1">Conocenos</h6>
+                            <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Nuestro Equipo de <span class="text-orange-2">Trabajo</span>
+                            </h1>
+                            <div class="title-line-4 align-center"></div>
                         </div>
+                        <div class="clearfix"></div>
+                        <!--empieza -->
+                        {% for equipo in equipos %}
+                        <div class="col-md-4 col-sm-6">
+                            <div class="team-holder15 two bmargin">
+                                <div class="team-member"><img src="/media/{{ equipo.imagen }}" alt="" class="img-responsive"/></div>
+                                <div class="info-box text-center">
+                                    <h5 class="uppercase less-mar2">{{ equipo.nombre}}</h5>
+                                    <span class="text-orange-2">{{ equipo.cargo }}</span> <br/>
+                                    <br/>
+                                    <p>{{ equipo.descripcion }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+
+
+                        <!--end item-->
                     </div>
                 </div>
-                {% endfor %}
-                
+            </section>
+        <div class="clearfix"></div>
+    {% endif %}
 
-                            
-                <!--end item-->
-            </div>
-        </div>
-    </section>
-    <div class="clearfix"></div>
-    <!--end section-->
 
     <section class="section-light section-side-image clearfix">
         <div class="img-holder col-md-6 col-sm-3 pull-left">
