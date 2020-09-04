@@ -28,3 +28,8 @@ class AdminPrincipal(admin.ModelAdmin):
 class AdminSlider(admin.ModelAdmin):
     list_display_links = Attr(Slider)
     list_display = Attr(Slider)
+
+@admin.register(Historia)
+class AdminHistoria(admin.ModelAdmin):
+    list_display_links = Attr(Historia)
+    list_display = Attr(Historia)

@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 
-from Home.models import Categoria, Proyectos, Principal, Slider
+from Home.models import Categoria, Proyectos, Principal, Slider, Historia
 
 
 def index(request):
@@ -12,6 +12,18 @@ def index(request):
         "principal": Principal.objects.last(),
     }
     return render(request,"index.html",contexto)
+
+def historia(request):
+    historias=Historia.objects.all()
+    for historia in historias:
+        historia.visitas+=1
+        historia.save()
+
+    contexto={
+        "principal": Principal.objects.last(),
+        "historias":historias,
+    }
+    return render(request,"historia.html",contexto)
 
 def proyectos(request):
     proyectos=Proyectos.objects.all()

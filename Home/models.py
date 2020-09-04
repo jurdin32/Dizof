@@ -1,3 +1,4 @@
+from ckeditor.fields import RichTextField
 from django.db import models
 
 # Create your models here.
@@ -20,6 +21,14 @@ class Principal(models.Model):
                                         ("/static/css/colors/azul.css", "Azul"),
                                     )
                     )
+
+class Historia(models.Model):
+    imagen=models.ImageField(upload_to="Historia")
+    fecha=models.DateField()
+    titulo=models.CharField(max_length=100, default="")
+    escritor=models.CharField(max_length=60, default="admin")
+    visitas=models.IntegerField(default=1)
+    contenido=RichTextField()
 
 class Slider(models.Model):
     imagen=models.ImageField(upload_to="Slider")
