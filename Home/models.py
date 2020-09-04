@@ -21,6 +21,7 @@ class Principal(models.Model):
                                         ("/static/css/colors/azul.css", "Azul"),
                                     )
                     )
+    video_fondo=models.CharField(max_length=120, default="J2qDRJdTGow")
 
 class Historia(models.Model):
     tipo=models.CharField(max_length=30,choices=(("Pasion","Pasión"),("Historia","Historia")), default="Historia")
