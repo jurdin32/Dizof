@@ -33,3 +33,8 @@ class AdminSlider(admin.ModelAdmin):
 class AdminHistoria(admin.ModelAdmin):
     list_display_links = Attr(Historia)
     list_display = Attr(Historia)
+
+@admin.register(Equipo)
+class AdminEquipo(admin.ModelAdmin):
+    list_display_links = Attr(Equipo)
+    list_display = Attr(Equipo)

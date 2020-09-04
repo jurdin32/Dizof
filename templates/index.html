@@ -286,48 +286,24 @@
                     <div class="title-line-4 align-center"></div>
                 </div>
                 <div class="clearfix"></div>
+                <!--empieza -->
+                {% for equipo in equipos %}
                 <div class="col-md-4 col-sm-6">
                     <div class="team-holder15 two bmargin">
-                        <div class="team-member"><img src="/static/images/771.jpg" alt="" class="img-responsive"/></div>
+                        <div class="team-member"><img src="/media/{{ equipo.imagen }}" alt="" class="img-responsive"/></div>
                         <div class="info-box text-center">
-                            <h5 class="uppercase less-mar2">John William</h5>
-                            <span class="text-orange-2">Founder and CEO</span> <br/>
+                            <h5 class="uppercase less-mar2">{{ equipo.nombre}}</h5>
+                            <span class="text-orange-2">{{ equipo.cargo }}</span> <br/>
                             <br/>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo et
-                                Praesent Lorem ipsum dolor sit amet</p>
+                            <p>{{ equipo.descripcion }}</p>
                         </div>
                     </div>
                 </div>
-                <!--end item-->
+                {% endfor %}
+                
 
-                <div class="col-md-4 col-sm-6">
-                    <div class="team-holder15 two bmargin">
-                        <div class="team-member"><img src="/static/images/773.jpg" alt="" class="img-responsive"/></div>
-                        <div class="info-box text-center">
-                            <h5 class="uppercase less-mar2">Charlotte</h5>
-                            <span class="text-orange-2">Manager</span> <br/>
-                            <br/>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo et
-                                Praesent Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
+                            
                 <!--end item-->
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="team-holder15 two bmargin">
-                        <div class="team-member"><img src="/static/images/772.jpg" alt="" class="img-responsive"/></div>
-                        <div class="info-box text-center">
-                            <h5 class="uppercase less-mar2">Benjamin</h5>
-                            <span class="text-orange-2">Creative Designer</span> <br/>
-                            <br/>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo et
-                                Praesent Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <!--end item-->
-
             </div>
         </div>
     </section>

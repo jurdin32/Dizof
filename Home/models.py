@@ -47,6 +47,11 @@ class Slider(models.Model):
     duracion=models.IntegerField(default=9)
     text_size=models.IntegerField(default=100)
 
+class Equipo(models.Model):
+    imagen=models.ImageField(upload_to="Equipo",null=True,blank=True)
+    nombre=models.CharField(max_length=60)
+    cargo=models.CharField(max_length=60, default="Desarrollador")
+    descripcion=models.TextField()
 
 
 

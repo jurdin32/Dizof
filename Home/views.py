@@ -3,13 +3,14 @@ from django.shortcuts import render
 # Create your views here.
 
 
-from Home.models import Categoria, Proyectos, Principal, Slider, Historia
+from Home.models import Categoria, Proyectos, Principal, Slider, Historia, Equipo
 
 
 def index(request):
     contexto={
         "sliders":Slider.objects.all(),
         "principal": Principal.objects.last(),
+        "equipos":Equipo.objects.all(),
     }
     return render(request,"index.html",contexto)
 
