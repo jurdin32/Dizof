@@ -295,7 +295,7 @@
                                     <h5 class="uppercase less-mar2">{{ equipo.nombre}}</h5>
                                     <span class="text-orange-2">{{ equipo.cargo }}</span> <br/>
                                     <br/>
-                                    <p>{{ equipo.descripcion }}</p>
+                                    <p>{{ equipo.descripcion|truncatechars:25 }}</p>
                                 </div>
                             </div>
                         </div>
