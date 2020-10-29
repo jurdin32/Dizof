@@ -290,7 +290,7 @@
                         {% for equipo in equipos %}
                         <div class="col-md-4 col-sm-6">
                             <div class="team-holder15 two bmargin">
-                                <div class="team-member"><img src="/media/{{ equipo.imagen }}" alt="" class="img-responsive"/></div>
+                                <div class="team-member"><img style="width: 80%" src="/media/{{ equipo.imagen }}" alt="" class="img-responsive"/></div>
                                 <div class="info-box text-center">
                                     <h5 class="uppercase less-mar2">{{ equipo.nombre}}</h5>
                                     <span class="text-orange-2">{{ equipo.cargo }}</span> <br/>
@@ -300,9 +300,6 @@
                             </div>
                         </div>
                         {% endfor %}
-
-
-
                         <!--end item-->
                     </div>
                 </div>
