@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 
-from Home.models import Categoria, Proyectos, Principal, Slider, Historia, Equipo, Servicios
+from Home.models import Categoria, Proyectos, Principal, Slider, Historia, Equipo, Servicios, Blog
 
 
 def index(request):
@@ -58,6 +58,7 @@ def proyectos(request):
 
 def blogs(request):
     contexto={
+        'blogs':Blog.objects.all().order_by('fecha')
 
     }
     return render(request,'blog2.html',contexto)
