@@ -34,8 +34,6 @@ class AdminServicios(admin.ModelAdmin):
     list_display_links = Attr(Servicios)
     list_display = Attr(Servicios)
 
-
-
 @admin.register(Historia)
 class AdminHistoria(admin.ModelAdmin):
     list_display_links = Attr(Historia)
@@ -45,3 +43,8 @@ class AdminHistoria(admin.ModelAdmin):
 class AdminEquipo(admin.ModelAdmin):
     list_display_links = Attr(Equipo)
     list_display = Attr(Equipo)
+
+@admin.register(Blog)
+class AdminBlog(admin.ModelAdmin):
+    list_display = Attr(Blog)
+    list_display_links = Attr(Blog)
