@@ -39,17 +39,17 @@
                 {% for historia in historias %}
                 <div class="col-md-12 bmargin">
                     <div class="blog-holder-12">
+                    {% if historia.imagen %}
                         <div class="image-holder">
                             {% if historia.fecha %}
                             <div class="overlay bg-opacity-1">
                                 <div class="post-date-box"> {{ historia.fecha|date:"d" }} <span>{{ historia.fecha|date:"M, Y" }}</span></div>
                             </div>
                             {% endif %}
-                            {% if historia.imagen %}
-                            <img class="img-responsive" alt="" src="/media/{{ historia.imagen }}">
-                            {% endif %}
 
+                            <img class="img-responsive" alt="" src="/media/{{ historia.imagen }}">
                         </div>
+                    {% endif %}
                     </div>
                     <div class="clearfix"></div>
                     <br/>
