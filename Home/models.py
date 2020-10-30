@@ -87,3 +87,6 @@ class Blog(models.Model):
     contendio=RichTextField()
     visitas=models.IntegerField(default=1)
 
+    class Meta:
+        ordering=['-fecha']
+
