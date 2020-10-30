@@ -54,7 +54,7 @@ class Equipo(models.Model):
     descripcion=models.TextField()
 
 class Servicios(models.Model):
-    icono=models.TextField(default="icon-lightbulb")
+    icono=models.CharField(default="icon-lightbulb")
     nombre=models.CharField(max_length=60)
     descripcion=models.TextField(max_length=90)
 
