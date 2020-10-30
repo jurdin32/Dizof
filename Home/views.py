@@ -63,8 +63,11 @@ def blogs(request):
     return render(request,'blog2.html',contexto)
 
 def blog(request,id):
+    blog=Blog.objects.get(id=id)
+    blog.visitas+=1
+    blog.save()
     contexto={
-        "blog":Blog.objects.get(id=id),
+        "blog":blog
     }
     return render(request, 'blog.html', contexto)
 
