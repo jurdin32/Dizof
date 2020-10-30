@@ -56,3 +56,9 @@ def proyectos(request):
 
     return render(request,"proyectos.html",contexto)
 
+def blogs(request):
+    contexto={
+
+    }
+    return render(request,'blog2.html',contexto)
+
