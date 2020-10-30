@@ -33,17 +33,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 bmargin">
-          <div class="blog-holder-12">
+            {% if blog.imagen %}
+            <div class="blog-holder-12">
             <div class="image-holder">
-
-                {% if blog.imagen %}
-                    <div class="overlay bg-opacity-1">
+              <div class="overlay bg-opacity-1">
                 <div class="post-date-box"> {{ blog.fecha|date:"d" }}<span>{{ blog.fecha|date:"M, Y" }}</span> </div>
               </div>
-                <img class="img-responsive" alt="" src="/media/{{ blog.portada }}"> </div>
-                {% endif %}
-
+              <img class="img-responsive" alt="" src="/media/{{ blog.portada }}"> </div>
           </div>
+            {% endif %}
+
           <div class="clearfix"></div>
           <br/>
           <a href="#">
