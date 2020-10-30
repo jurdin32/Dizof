@@ -53,6 +53,10 @@ class Equipo(models.Model):
     cargo=models.CharField(max_length=60, default="Desarrollador")
     descripcion=models.TextField()
 
+class Servicios(models.Model):
+    icono=models.TextField(default="icon-lightbulb")
+    nombre=models.CharField(max_length=60)
+    descripcion=models.TextField(max_length=90)
 
 
 class Categoria(models.Model):

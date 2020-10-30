@@ -29,6 +29,13 @@ class AdminSlider(admin.ModelAdmin):
     list_display_links = Attr(Slider)
     list_display = Attr(Slider)
 
+@admin.register(Servicios)
+class AdminServicios(admin.ModelAdmin):
+    list_display_links = Attr(Servicios)
+    list_display = Attr(Servicios)
+
+
+
 @admin.register(Historia)
 class AdminHistoria(admin.ModelAdmin):
     list_display_links = Attr(Historia)
