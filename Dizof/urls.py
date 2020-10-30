@@ -26,7 +26,8 @@ urlpatterns = [
     path('history/',historia, name="historia"),
     path('pasion/',pasion, name="historia"),
     path('projects/', proyectos, name="proyectos"),
-    path('blogs/', blogs, name="blogs")
+    path('blogs/', blogs, name="blogs"),
+    path('blogs/<int:id>/', blog, name="blog")
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 admin.site.site_header = 'Administración de DIzof'

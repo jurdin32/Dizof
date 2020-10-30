@@ -63,8 +63,15 @@ def blogs(request):
     return render(request,'blog2.html',contexto)
 
 def blog(request,id):
+    categorias =[]
+    for i in Categoria.objects.all():
+        if not i in categorias:
+            categorias.append(i)
+
+    print(categorias)
+
     contexto={
         "blog":Blog.objects.get(id=id),
     }
-    return render(request, 'blog2.html', contexto)
+    return render(request, 'blog.html', contexto)
 
