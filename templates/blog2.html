@@ -53,7 +53,7 @@
                         {{ blog.contendio|safe|truncatechars_html:270 }}
                         <br/>
                         <a class="btn btn-border light btn-round btn-small" href="/blogs/{{ blog.id }}/">Leer Más</a></div>
-                    {% if forloop.counter|divisibleby:3 %}
+                    {% if forloop.counter0|divisibleby:3 %}
                     <div class="clearfix"></div>
                     {% endif %}
                 {% endfor %}
