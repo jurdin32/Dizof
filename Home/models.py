@@ -61,7 +61,7 @@ class Servicios(models.Model):
 
 
 class Categoria(models.Model):
-    nombre=models.CharField(max_length=50, help_text="NO mas de 50 Caracteres")
+    nombre=models.CharField(max_length=50, help_text="No mas de 50 Caracteres")
 
     def __str__(self):
         return self.nombre
@@ -81,9 +81,11 @@ class Proyectos(models.Model):
 
 class Blog(models.Model):
     imagen=models.ImageField(upload_to="Blogs",null=True,blank=True)
+    portada=models.ImageField(upload_to="blogs/portada",null=True,blank=True)
     fecha=models.DateField(auto_now_add=True)
     titulo=models.CharField(max_length=60)
     autor=models.ForeignKey(Autores,on_delete=models.CASCADE)
+    categoria=models.ForeignKey(Categoria,on_delete=models.CASCADE)
     contendio=RichTextField()
     visitas=models.IntegerField(default=1)
 
