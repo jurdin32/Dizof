@@ -57,8 +57,9 @@ def proyectos(request):
     return render(request,"proyectos.html",contexto)
 
 def blogs(request):
+    blogs=Blog.objects.order_by('-fecha')
     contexto={
-        'blogs':Blog.objects.order_by('-fecha')
+        'blogs':blogs,
 
     }
     return render(request,'blog2.html',contexto)
