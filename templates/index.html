@@ -323,16 +323,19 @@
                             <div class="title-line-4"></div>
                         </div>
                         <div class="clearfix"></div>
+                        {% for servicio in servicios %}
                         <div class="col-md-4">
                             <div class="feature-box-103 text-center bmargin">
-                                <div class="iconbox-medium round grayoutline2"><span class="icon-lightbulb"></span>
+                                <div class="iconbox-medium round grayoutline2"><span class="{{servicio.icono}}"></span>
                                 </div>
                                 <br/>
-                                <h4>User Analysis</h4>
-                                <p>Lorem ipsum dolor sit amet, sit et
-                                    justoconsectetuer adipiscing elit. Suspendisse justo.</p>
+                                <h4>{{ servicio.nombre }}</h4>
+                                <p>{{ servicio.descripcion}}</p>
                             </div>
                         </div>
+                        {% endfor %}
+                        
+
                         <!--end item-->
 
                         <div class="col-md-4">
