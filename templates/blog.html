@@ -35,10 +35,14 @@
         <div class="col-md-12 bmargin">
           <div class="blog-holder-12">
             <div class="image-holder">
-              <div class="overlay bg-opacity-1">
+
+                {% if blog.imagen %}
+                    <div class="overlay bg-opacity-1">
                 <div class="post-date-box"> {{ blog.fecha|date:"d" }}<span>{{ blog.fecha|date:"M, Y" }}</span> </div>
               </div>
-              <img class="img-responsive" alt="" src="/media/{{ blog.portada }}"> </div>
+                <img class="img-responsive" alt="" src="/media/{{ blog.portada }}"> </div>
+                {% endif %}
+
           </div>
           <div class="clearfix"></div>
           <br/>
