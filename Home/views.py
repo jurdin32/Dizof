@@ -13,7 +13,7 @@ def index(request):
         "equipos":Equipo.objects.all(),
         "servicios":Servicios.objects.all(),
         "historia":Historia.objects.filter(tipo="Historia").first(),
-        "pasion":Historia.objects.filter(tipo="Pasión").first()
+        "pasion":Historia.objects.filter(tipo="Pasión").first(),
     }
     return render(request,"index.html",contexto)
 
