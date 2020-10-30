@@ -38,13 +38,16 @@
             <div class="row">
                 {% for historia in historias %}
                 <div class="col-md-12 bmargin">
-                    <div class="blog-holder-12">
+                {% if historia.imagen %}
+                <div class="blog-holder-12">
                         <div class="image-holder">
                             <div class="overlay bg-opacity-1">
                                 <div class="post-date-box"> {{ historia.fecha|date:"d" }} <span>{{ historia.fecha|date:"M, Y" }}</span></div>
                             </div>
                             <img class="img-responsive" alt="" src="/media/{{ historia.imagen }}"></div>
                     </div>
+                {% endif %}
+
                     <div class="clearfix"></div>
                     <br/>
                     <h3 class="less-mar1">{{ historia.titulo}}</h3>
