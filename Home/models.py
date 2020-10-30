@@ -54,7 +54,7 @@ class Equipo(models.Model):
     descripcion=models.TextField()
 
 class Servicios(models.Model):
-    imagen=models.ImageField(null=True,blank=True, upload_to="servicios")
+
     icono=models.CharField(default="icon-lightbulb", max_length=30)
     nombre=models.CharField(max_length=60)
     descripcion=models.TextField(max_length=90)
