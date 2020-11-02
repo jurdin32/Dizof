@@ -23,6 +23,9 @@ class Principal(models.Model):
                     )
     video_fondo=models.CharField(max_length=120, default="J2qDRJdTGow")
 
+    class Meta:
+        verbose_name_plural="1. Página Principal"
+
 class Historia(models.Model):
     tipo=models.CharField(max_length=30,choices=(("Pasion","Pasión"),("Historia","Historia")), default="Historia")
     imagen=models.ImageField(upload_to="Historia",null=True,blank=True)
@@ -31,6 +34,9 @@ class Historia(models.Model):
     escritor=models.CharField(max_length=60, default="admin")
     visitas=models.IntegerField(default=1)
     contenido=RichTextField()
+
+    class Meta:
+        verbose_name_plural="3. Pasión e Historia"
 
 
 class Slider(models.Model):
@@ -47,27 +53,41 @@ class Slider(models.Model):
     duracion=models.IntegerField(default=9)
     text_size=models.IntegerField(default=100)
 
+    class Meta:
+        verbose_name_plural="2. Sliders"
+
 class Equipo(models.Model):
     imagen=models.ImageField(upload_to="Equipo",null=True,blank=True)
     nombre=models.CharField(max_length=60)
     cargo=models.CharField(max_length=60, default="Desarrollador")
     descripcion=models.TextField()
 
-class Servicios(models.Model):
+    class Meta:
+        verbose_name_plural="4. Equipo de trabajo"
 
+class Servicios(models.Model):
     icono=models.CharField(default="icon-lightbulb", max_length=30)
     nombre=models.CharField(max_length=60)
     descripcion=models.TextField(max_length=90)
 
+    class Meta:
+        verbose_name_plural="5. Servicios"
+
 
 class Categoria(models.Model):
     nombre=models.CharField(max_length=50, help_text="No mas de 50 Caracteres")
+
+    class Meta:
+        verbose_name_plural="6. Categoria de los Proyectos"
 
     def __str__(self):
         return self.nombre
 
 class Autores(models.Model):
     nombre=models.CharField(max_length=60)
+
+    class Meta:
+        verbose_name_plural="7. Autores de los Blogs"
 
     def __str__(self):
         return self.nombre
@@ -79,6 +99,8 @@ class Proyectos(models.Model):
     url=models.URLField(null=True,blank=True)
     autor=models.ForeignKey(Autores, on_delete=models.CASCADE)
 
+    class Meta:"6.1 Proyectos "
+
 class Blog(models.Model):
     imagen=models.ImageField(upload_to="Blogs",null=True,blank=True)
     portada=models.ImageField(upload_to="blogs/portada",null=True,blank=True)
@@ -88,4 +110,7 @@ class Blog(models.Model):
     categoria=models.ForeignKey(Categoria,on_delete=models.CASCADE)
     contendio=RichTextField()
     visitas=models.IntegerField(default=1)
+
+    class Meta:
+        verbose_name_plural="7.1 Entradas de Blogs"
 
