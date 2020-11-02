@@ -27,6 +27,7 @@ def historia(request):
     contexto={
         "principal": Principal.objects.last(),
         "historias":historias,
+        "datosPrincipales": DatosPrincipales.objects.last(),
     }
     return render(request,"historia.html",contexto)
 
@@ -39,6 +40,7 @@ def pasion(request):
     contexto={
         "principal": Principal.objects.last(),
         "historias":historias,
+        "datosPrincipales": DatosPrincipales.objects.last(),
     }
     return render(request,"pasion.html",contexto)
 
@@ -53,6 +55,7 @@ def proyectos(request):
         "proyectos":proyectos.order_by("nombre"),
         "categoria":categoria,
         "principal":Principal.objects.last(),
+        "datosPrincipales": DatosPrincipales.objects.last(),
     }
 
     return render(request,"proyectos.html",contexto)
@@ -60,6 +63,7 @@ def proyectos(request):
 def blogs(request):
     contexto={
         'blogs':Blog.objects.all().order_by('-id'),
+        "datosPrincipales": DatosPrincipales.objects.last(),
     }
     return render(request,'blog2.html',contexto)
 
@@ -68,7 +72,8 @@ def blog(request,id):
     blog.visitas+=1
     blog.save()
     contexto={
-        "blog":blog
+        "blog":blog,
+        "datosPrincipales": DatosPrincipales.objects.last(),
     }
     return render(request, 'blog.html', contexto)
 
