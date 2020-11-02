@@ -48,3 +48,8 @@ class AdminEquipo(admin.ModelAdmin):
 class AdminBlog(admin.ModelAdmin):
     list_display = Attr(Blog)
     list_display_links = Attr(Blog)
+
+@admin.register(DatosPrincipales)
+class AdminDatosPrincipales(admin.ModelAdmin):
+    list_display_links = Attr(DatosPrincipales)
+    list_display = Attr(DatosPrincipales)
