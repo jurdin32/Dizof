@@ -99,7 +99,8 @@ class Proyectos(models.Model):
     url=models.URLField(null=True,blank=True)
     autor=models.ForeignKey(Autores, on_delete=models.CASCADE)
 
-    class Meta:"6.1 Proyectos "
+    class Meta:
+        verbose_name_plural="6.1 Proyectos"
 
 class Blog(models.Model):
     imagen=models.ImageField(upload_to="Blogs",null=True,blank=True)
