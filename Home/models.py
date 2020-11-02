@@ -26,6 +26,18 @@ class Principal(models.Model):
     class Meta:
         verbose_name_plural="1. Página Principal"
 
+class DatosPrincipales(models.Model):
+    direccion=models.CharField(max_length=60)
+    telefono=models.CharField(max_length=60)
+    email=models.EmailField(max_length=120)
+    facebook=models.URLField(max_length=500)
+    tweeter = models.URLField(max_length=500)
+    linkeding = models.URLField(max_length=500)
+    youtube= models.URLField(max_length=500)
+
+    class Meta:
+        verbose_name_plural="1.1 Datos de la Aplicación"
+
 class Historia(models.Model):
     tipo=models.CharField(max_length=30,choices=(("Pasion","Pasión"),("Historia","Historia")), default="Historia")
     imagen=models.ImageField(upload_to="Historia",null=True,blank=True)
