@@ -38,6 +38,7 @@ class DatosPrincipales(models.Model):
     class Meta:
         verbose_name_plural="1.1 Datos de la Aplicación"
 
+
 class Historia(models.Model):
     tipo=models.CharField(max_length=30,choices=(("Pasion","Pasión"),("Historia","Historia")), default="Historia")
     imagen=models.ImageField(upload_to="Historia",null=True,blank=True)
