@@ -31,7 +31,7 @@ class DatosPrincipales(models.Model):
     telefono=models.CharField(max_length=60)
     email=models.EmailField(max_length=120)
     facebook=models.URLField(max_length=500,null=True,blank=True)
-    tweeter = models.URLField(max_length=500,null=True,blank=True)
+    twitter = models.URLField(max_length=500,null=True,blank=True)
     linkeding = models.URLField(max_length=500,null=True,blank=True)
     youtube= models.URLField(max_length=500,null=True,blank=True)
 
