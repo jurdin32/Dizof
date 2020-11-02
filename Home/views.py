@@ -14,6 +14,7 @@ def index(request):
         "servicios":Servicios.objects.all(),
         "historia":Historia.objects.filter(tipo="Historia").first(),
         "pasion":Historia.objects.filter(tipo="Pasion").first(),
+
     }
     return render(request,"index.html",contexto)
 
